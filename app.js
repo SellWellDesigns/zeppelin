@@ -29,7 +29,7 @@ if ('development' == app.get('env')) {
 }
 
 var animations = [
-    'none',
+    'fixed-bg',
     'grow',
     'cards',
     'curl',

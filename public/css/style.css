@@ -5969,10 +5969,10 @@ body {
   padding: 20px;
   position: relative;
 }
-.none #intro,
-.none #about,
-.none #services,
-.none #contact {
+.fixed-bg #intro,
+.fixed-bg #about,
+.fixed-bg #services,
+.fixed-bg #contact {
   background-attachment: fixed;
 }
 #intro {
