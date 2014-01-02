@@ -1,0 +1,37 @@
+{
+  "name": "Zeppelin",
+  "version": "0.0.1",
+  "authors": [
+    "Conar Welsh <conar@sellwelldesigns.com>"
+  ],
+  "description": "Zeppelin Places",
+  "main": "app.js",
+  "keywords": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.0-rc.3",
+    "angular-route": "1.2.0-rc.3",
+    "angular-resource": "1.2.0-rc.3",
+    "angular-touch": "1.2.0-rc.3",
+    "angular-animate": "1.2.0-rc.3",
+    "angular-sanitize": "1.2.0-rc.3",
+    "angular-bootstrap": "0.6.0",
+    "angularjs-file-upload": "*",
+    "angularLocalStorage": "*",
+    "bootstrap": "*",
+    "font-awesome": "*",
+    "stroll": "*"
+  },
+  "resolutions": {
+    "angular": "1.2.0-rc.3"
+  }
+}
