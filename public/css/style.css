@@ -6001,6 +6001,12 @@ body {
 .stack {
   height: 400% !important;
 }
+.stack.fixed #intro,
+.stack.fixed #about,
+.stack.fixed #services,
+.stack.fixed #contact {
+  background-attachment: fixed;
+}
 .stack li {
   width: 100%;
 }

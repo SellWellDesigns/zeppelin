@@ -5,7 +5,7 @@ html
     link(rel='stylesheet', href='/css/style.css')
     link(rel='stylesheet', href='/vendor/stroll/css/stroll.min.css')
   body
-    ul#content(class="list-unstyled "+animation)
+    ul#content(class="list-unstyled "+animation.replace('--', ' '))
         li#intro
             h1 Zeppelin Development
         li#about
