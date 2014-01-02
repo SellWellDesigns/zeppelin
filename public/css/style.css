@@ -5969,11 +5969,12 @@ body {
   padding: 20px;
   position: relative;
 }
-.fixed-bg #intro,
-.fixed-bg #about,
-.fixed-bg #services,
-.fixed-bg #contact {
-  background-attachment: fixed;
+#backButton {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #000;
 }
 #intro {
   background: url('http://www.jbace.com/images/uploads/style/background-full.jpg') no-repeat;
@@ -5991,10 +5992,39 @@ body {
   background: url('http://paulmason.name/media/demos/full-screen-background-image/background.jpg') no-repeat;
   background-size: cover;
 }
-#backButton {
+.fixed-bg #intro,
+.fixed-bg #about,
+.fixed-bg #services,
+.fixed-bg #contact {
+  background-attachment: fixed;
+}
+.stack {
+  height: 400% !important;
+}
+.stack li {
+  width: 100%;
+}
+.stack .pinned {
+  position: fixed !important;
+  top: 0 !important;
+}
+.stack #intro {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  font-size: 30px;
-  color: #000;
+  top: 0;
+  z-index: 5;
+}
+.stack #about {
+  position: absolute;
+  top: 100%;
+  z-index: 10;
+}
+.stack #services {
+  position: absolute;
+  top: 200%;
+  z-index: 15;
+}
+.stack #contact {
+  position: absolute;
+  top: 300%;
+  z-index: 20;
 }

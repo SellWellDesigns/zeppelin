@@ -17,12 +17,18 @@ html, body {
     }
 }
 
-
-.fixed-bg {
-    #intro, #about, #services, #contact {
-        background-attachment: fixed;
-    }
+#backButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #000;
 }
+
+
+
+
+
 
 
 
@@ -50,10 +56,50 @@ html, body {
 
 
 
-#backButton {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    color: #000;
+
+
+
+
+
+.fixed-bg {
+    #intro, #about, #services, #contact {
+        background-attachment: fixed;
+    }
+}
+
+.stack {
+    height: 400% !important;
+
+    li {
+        width: 100%;
+    }
+
+    .pinned {
+        position: fixed !important;
+        top: 0 !important;
+    }
+
+    #intro {
+        position: fixed;
+        top: 0;
+        z-index: 5;
+    }
+
+    #about {
+        position: absolute;
+        top: 100%;
+        z-index: 10;
+    }
+
+    #services {
+        position: absolute;
+        top: 200%;
+        z-index: 15;
+    }
+
+    #contact {
+        position: absolute;
+        top: 300%;
+        z-index: 20;
+    }
 }

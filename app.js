@@ -30,6 +30,7 @@ if ('development' == app.get('env')) {
 
 var animations = [
     'fixed-bg',
+    'stack',
     'grow',
     'cards',
     'curl',
