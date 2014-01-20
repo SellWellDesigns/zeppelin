@@ -60,6 +60,10 @@ animations.forEach(function(view){
     });
 });
 
+app.get('/demo1', function(req, res){
+    res.render('demo1');
+});
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });

@@ -6,12 +6,20 @@ html
     link(rel='stylesheet', href='/vendor/stroll/css/stroll.min.css')
   body
     .container
-        h1 Different Animations
+        .row
+            .col-sm-6
+                h1 Different Animations
 
-        ul.list-unstyled
-            - each view in animations
-                li
-                    a(href="/"+view)= view
+                ul.list-unstyled
+                    - each view in animations
+                        li
+                            a(href="/"+view)= view
+            .col-sm-6
+                h1 Demo Version
+
+                ul.list-unstyled
+                    a(href="/demo1") Demo 1
+
 
     script(src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js")
     script(src="/vendor/bootstrap/dist/js/bootstrap.min.js")
