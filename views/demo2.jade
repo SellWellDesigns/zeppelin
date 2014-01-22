@@ -1,0 +1,90 @@
+doctype html
+html
+  head
+    title Zeppelin Test
+    link(rel='stylesheet', href='/css/demo2.css')
+    link(rel='stylesheet', href='/vendor/stroll/css/stroll.min.css')
+  body
+    nav.navbar.navbar-default(role="navigation")
+        .navbar-header
+            button.navbar-toggle(type="button", data-toggle="collapse", data-target="#nav")
+                span.sr-only Toggle Navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+        #nav.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+                li.active
+                    a(href="#") about
+                li
+                    a(href="#") projects
+                li
+                    a(href="#") contact
+                    
+    ul#content(class="list-unstyled stack")
+        li#intro
+            .logo(alt="Zeppelin Development")
+            i.down-arrow
+        li#quotes.pinned
+
+            .container
+                blockquote
+                    p "insert moving quote here about construction and your mentality."
+                    cite.pull-right(title="micky zeppelin") - micky zeppelin
+        li#about(data-spy="pin")
+            .container
+                h1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis semper massa, a porta est sodales nec. Vivamus consequat ligula et sagittis iaculis. Donec lacinia tas risus
+                p Ut non lectus quis magna congue laoreet ac non arcu. Fusce sit amet felis magna. Donec tempor erat in eros porttitor convallis eu nec nisi. Morbi sit amet euismod turpis. Etiam tincidunt, ante eget pellentesque ornare, neque arcu faucibus felis, et pretium nisl metus a lectus. Nulla a luctus enim, et iaculis sapien.
+                p Vestibulum ultrices vehicula faucibus. Vestibulum commodo tempus turpis, nec condimentum dolor egestas elementum. Duis interdum feugiat varius. Morbi dapibus consectetur nunc, ut posuere felis semper at. Nulla id blandit elit. Nullam tortor sem, rutrum a sem sed, gravida dignissim mauris. Vivamus ultricies enim ligula. Nunc auctor lacus et purus pellentesque convallis.
+                p Sed iaculis venenatis enim quis adipiscing. Suspendisse hendrerit massa sit amet ligula laoreet euismod. Maecenas sodales erat a enim elementum sagittis. Donec velit nisl, tempus nec nibh id, ullamcorper commodo nunc. Pellentesque a tempor ligula. Donec vitae augue eu dolor imperdiet lobortis a sed sapien. Cras gravida eu arcu eu dignissim. Nulla facilisis, urna suscipit condimentum porttitor, odio ligula condimentum justo, eu bibendum eros purus quis tellus. Praesent in malesuada magna, vel tristique nisl. Nulla facilisi. Ut a arcu nulla. Curabitur sit amet eros rutrum, pellentesque mauris vitae, viverra nulla.
+        li#projects.drawer-wrapper(data-spy="pin")
+            .container
+                .row
+                    .col-sm-4
+                        ul.list-unstyled
+                            li
+                                a(href="#taxi1", data-toggle="drawer") taxi I
+                            li
+                                a(href="#taxi2", data-toggle="drawer") taxi II
+                            li
+                                a(href="#", data-toggle="drawer") freight
+                            li
+                                a(href="#", data-toggle="drawer") drive
+                            li
+                                a(href="#", data-toggle="drawer") 3i
+                            li
+                                a(href="#", data-toggle="drawer") the source
+                            li
+                                a(href="#", data-toggle="drawer") greenhouse
+                            li
+                                a(href="#", data-toggle="drawer") freight residences
+                            li
+                                a(href="#", data-toggle="drawer") drive 2
+                    .col-sm-8
+                        #taxi1.drawer
+                            h1 taxi I
+                            .well
+                                ul.list-unstyled
+                                    li > 234 SQ FT
+                                    li > completed jan 2007
+                                    li > 3457 Ringsby Ct
+                                p massa sit amet ligula laoreet euismod. Maecenas sodales erat a enim elementum sagittis. Donec velit nisl, tempus nec nibh id, ullamcorper commodo nunc. Pellentesque a tempor ligula. Donec vitae augue eu dolor imperdiet lobortis a sed sapien. Cras gravida eu arcu eu dignissim. Nulla facilisis, urna suscipit condimentum porttitor, odio ligula condimentum justo, eu bibendum eros purus
+                        #taxi2.drawer
+                            h1 taxi II
+                            .well
+                                ul.list-unstyled
+                                    li > 234 SQ FT
+                                    li > completed jan 2007
+                                    li > 3457 Ringsby Ct
+                                p massa sit amet ligula laoreet euismod. Maecenas sodales erat a enim elementum sagittis. Donec velit nisl, tempus nec nibh id, ullamcorper commodo nunc. Pellentesque a tempor ligula. Donec vitae augue eu dolor imperdiet lobortis a sed sapien. Cras gravida eu arcu eu dignissim. Nulla facilisis, urna suscipit condimentum porttitor, odio ligula condimentum justo, eu bibendum eros purus
+
+        li#contact
+            h1 Contact Us
+
+    #backButton
+        a(href="/") <-- Back
+
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js")
+    script(src="/vendor/bootstrap/dist/js/bootstrap.min.js")
+    script(src="/vendor/stroll/js/stroll.min.js")
+    script(src="/js/site.js")
