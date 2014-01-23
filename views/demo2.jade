@@ -5,7 +5,7 @@ html
     link(rel='stylesheet', href='/css/demo2.css')
     link(rel='stylesheet', href='/vendor/stroll/css/stroll.min.css')
   body
-    nav.navbar.navbar-default(role="navigation")
+    nav.navbar.navbar-default.pinned(role="navigation")
         .navbar-header
             button.navbar-toggle(type="button", data-toggle="collapse", data-target="#nav")
                 span.sr-only Toggle Navigation
@@ -15,16 +15,17 @@ html
         #nav.collapse.navbar-collapse
             ul.nav.navbar-nav.navbar-right
                 li.active
-                    a(href="#") about
+                    a(href="#about") about
                 li
-                    a(href="#") projects
+                    a(href="#projects") projects
                 li
-                    a(href="#") contact
-                    
+                    a(href="#contact") contact
+
     ul#content(class="list-unstyled stack")
         li#intro
             .logo(alt="Zeppelin Development")
             i.down-arrow
+                span Scroll Down!
         li#quotes.pinned
 
             .container
@@ -37,7 +38,8 @@ html
                 p Ut non lectus quis magna congue laoreet ac non arcu. Fusce sit amet felis magna. Donec tempor erat in eros porttitor convallis eu nec nisi. Morbi sit amet euismod turpis. Etiam tincidunt, ante eget pellentesque ornare, neque arcu faucibus felis, et pretium nisl metus a lectus. Nulla a luctus enim, et iaculis sapien.
                 p Vestibulum ultrices vehicula faucibus. Vestibulum commodo tempus turpis, nec condimentum dolor egestas elementum. Duis interdum feugiat varius. Morbi dapibus consectetur nunc, ut posuere felis semper at. Nulla id blandit elit. Nullam tortor sem, rutrum a sem sed, gravida dignissim mauris. Vivamus ultricies enim ligula. Nunc auctor lacus et purus pellentesque convallis.
                 p Sed iaculis venenatis enim quis adipiscing. Suspendisse hendrerit massa sit amet ligula laoreet euismod. Maecenas sodales erat a enim elementum sagittis. Donec velit nisl, tempus nec nibh id, ullamcorper commodo nunc. Pellentesque a tempor ligula. Donec vitae augue eu dolor imperdiet lobortis a sed sapien. Cras gravida eu arcu eu dignissim. Nulla facilisis, urna suscipit condimentum porttitor, odio ligula condimentum justo, eu bibendum eros purus quis tellus. Praesent in malesuada magna, vel tristique nisl. Nulla facilisi. Ut a arcu nulla. Curabitur sit amet eros rutrum, pellentesque mauris vitae, viverra nulla.
-        li#projects.drawer-wrapper(data-spy="pin")
+        li#projects(data-spy="pin")
+            #drawerBg
             .container
                 .row
                     .col-sm-4
@@ -65,9 +67,17 @@ html
                             h1 taxi I
                             .well
                                 ul.list-unstyled
-                                    li > 234 SQ FT
-                                    li > completed jan 2007
-                                    li > 3457 Ringsby Ct
+                                    li 
+                                        strong >
+                                        | 234 SQ FT
+                                    li 
+                                        strong >
+                                        | completed jan 2007
+                                    li 
+                                        strong > 
+                                        | 3457 Ringsby Ct
+
+                                p &nbsp;
                                 p massa sit amet ligula laoreet euismod. Maecenas sodales erat a enim elementum sagittis. Donec velit nisl, tempus nec nibh id, ullamcorper commodo nunc. Pellentesque a tempor ligula. Donec vitae augue eu dolor imperdiet lobortis a sed sapien. Cras gravida eu arcu eu dignissim. Nulla facilisis, urna suscipit condimentum porttitor, odio ligula condimentum justo, eu bibendum eros purus
                         #taxi2.drawer
                             h1 taxi II
@@ -79,7 +89,13 @@ html
                                 p massa sit amet ligula laoreet euismod. Maecenas sodales erat a enim elementum sagittis. Donec velit nisl, tempus nec nibh id, ullamcorper commodo nunc. Pellentesque a tempor ligula. Donec vitae augue eu dolor imperdiet lobortis a sed sapien. Cras gravida eu arcu eu dignissim. Nulla facilisis, urna suscipit condimentum porttitor, odio ligula condimentum justo, eu bibendum eros purus
 
         li#contact
-            h1 Contact Us
+            .container
+                address 3455 ringsby ct #100
+                    br
+                    | 303.xxx.xxxx
+                    br
+                    | m-f 9:00 am - 5:00 pm
+                a.btn.btn-default.btn-lg(href="#") email
 
     #backButton
         a(href="/") <-- Back
@@ -87,4 +103,4 @@ html
     script(src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js")
     script(src="/vendor/bootstrap/dist/js/bootstrap.min.js")
     script(src="/vendor/stroll/js/stroll.min.js")
-    script(src="/js/site.js")
+    script(src="/js/site2.js")

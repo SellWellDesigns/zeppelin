@@ -1,11 +1,16 @@
-@import url(http://fonts.googleapis.com/css?family=Lato|Merriweather+Sans);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,900|Merriweather+Sans);
 @import "../vendor/bootstrap/less/bootstrap";
 
-@font-family-sans-serif: 'Merriweather Sans', sans-serif;
-@headings-font-family: 'Lato', sans-serif;
-@well-bg: fadeout(#939393, 60%);
+@font-family-sans-serif: 'Lato', sans-serif;
 
+@headings-font-family: 'Merriweather Sans', sans-serif;
+@headings-font-weight: 900;
 
+@well-bg: fadeout(#939393, 20%);
+
+@border-radius-base: 0;
+@border-radius-large: 0;
+@border-radius-small: 0;
 
 
 // Basics of a navbar
@@ -38,6 +43,14 @@
 @navbar-default-toggle-icon-bar-bg:        #ccc;
 @navbar-default-toggle-border-color:       #ddd;
 
+
+html, html a {
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
 
 
 html, body {
@@ -82,6 +95,11 @@ nav.navbar {
         position: fixed;
         top: 0;
     }
+
+    a {
+        text-transform: uppercase;
+        font-weight: 300;
+    }
 }
 
 #intro {
@@ -101,13 +119,28 @@ nav.navbar {
     }
 
     .down-arrow {
-        background: url('../img/down-arrow.png') no-repeat;
-        width: 26px;
-        height: 60px;
+        background: bottom center url('../img/down-arrow.png') no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 120px / 2;
         position: absolute;
         bottom: 30px;
-        left: 50%;
-        margin-left: 13px;
+        .transition(all .07s linear);
+
+        span {
+            position: absolute;
+            display: none;
+            left: 52%;
+            bottom: 25px; 
+        }
+
+        &:hover {
+            height: 120px / 1.5;
+
+            span {
+                display: inline-block;
+            }
+        }
     }
 }
 
@@ -151,6 +184,13 @@ nav.navbar {
             text-decoration: none;
         }
     }
+
+    .drawer {
+        h1 {
+            font-size: 220px;
+
+        }
+    }
 }
 
 #contact {
@@ -170,7 +210,13 @@ nav.navbar {
     }
 }
 
-.drawer-wrapper {
+#drawerBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
     &.taxi1 {
         background-image: url('../img/taxi1.jpg') !important;
         background-size: cover !important;
@@ -185,6 +231,8 @@ nav.navbar {
     border: none;
     .box-shadow(none);
     color: #fff;
+    font-weight: 400;
+    width: 600px;
 }
 
 
@@ -203,7 +251,7 @@ nav.navbar {
     #intro {
         position: absolute;
         top: 0;
-        z-index: 5;
+        z-index: 2000;
     }
 
     #quotes {
