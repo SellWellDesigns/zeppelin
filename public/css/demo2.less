@@ -107,17 +107,6 @@ nav.navbar {
     background: @brand1;
     height: 92% !important;
 
-    .logo {
-        position: absolute;
-        background-image: url('../img/zeppelin-header-logo.png');
-        width: 1200px;
-        height: 199px;
-        left: 50%;
-        top: 50%;
-        margin-left: -1200px / 2;
-        margin-top: -199px / 2;
-    }
-
     .down-arrow {
         background: bottom center url('../img/down-arrow.png') no-repeat;
         background-size: contain;
@@ -125,6 +114,7 @@ nav.navbar {
         height: 120px / 2.5;
         position: absolute;
         bottom: 30px;
+        left: 0;
         .transition(all .07s linear);
 
         &:hover {
@@ -159,7 +149,6 @@ nav.navbar {
 
     h1 {
         color: @brand1;
-        margin-top: 300px;
         line-height: 1.5;
         margin-bottom: 60px;
     }
@@ -196,7 +185,9 @@ nav.navbar {
     color: #fff;
 }
 
-
+.full-height {
+    height: 100%;
+}
 
 
 
@@ -223,6 +214,12 @@ nav.navbar {
         background-image: url('../img/taxi1.jpg') !important;
         background-size: cover !important;   
     }
+}
+
+table.vertical-center, table.vertical-center tr, table.vertical-center tr td {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .well {
