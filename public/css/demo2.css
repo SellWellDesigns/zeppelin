@@ -6049,6 +6049,12 @@ nav.navbar a {
 }
 #about h1 {
   color: #f9ec23;
+  margin-top: 300px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+#about p {
+  line-height: 1.5;
 }
 #projects {
   background: #fff;
