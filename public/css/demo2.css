@@ -1619,9 +1619,9 @@ output {
   line-height: 1.428571429;
   color: #555555;
   vertical-align: middle;
-  background-color: #ffffff;
+  background-color: #353535;
   background-image: none;
-  border: 1px solid #cccccc;
+  border: 1px solid #353535;
   border-radius: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1635,17 +1635,17 @@ output {
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .form-control:-moz-placeholder {
-  color: #999999;
+  color: #ffffff;
 }
 .form-control::-moz-placeholder {
-  color: #999999;
+  color: #ffffff;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #999999;
+  color: #ffffff;
 }
 .form-control::-webkit-input-placeholder {
-  color: #999999;
+  color: #ffffff;
 }
 .form-control[disabled],
 .form-control[readonly],
@@ -1976,8 +1976,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #353535;
+  border-color: #353535;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -1985,8 +1985,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #3276b1;
-  border-color: #285e8e;
+  background-color: #212121;
+  border-color: #161616;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2008,11 +2008,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #428bca;
-  border-color: #357ebd;
+  background-color: #353535;
+  border-color: #353535;
 }
 .btn-primary .badge {
-  color: #428bca;
+  color: #353535;
   background-color: #fff;
 }
 .btn-warning {
@@ -3299,7 +3299,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #555555;
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid #cccccc;
+  border: 1px solid #353535;
   border-radius: 0;
 }
 .input-group-addon.input-sm {
@@ -6086,7 +6086,51 @@ nav.navbar a {
   background-size: cover !important;
 }
 #drawerBg.taxi2 {
-  background-image: url('../img/taxi1.jpg') !important;
+  background-image: url('../img/taxi2.jpg') !important;
+  background-size: cover !important;
+}
+#drawerBg.freight {
+  background-image: url('../img/freight.jpg') !important;
+  background-size: cover !important;
+}
+#drawerBg.drive1 {
+  background-image: url('../img/drive1.jpg') !important;
+  background-size: cover !important;
+}
+#drawerBg.drive2 {
+  background-image: url('../img/drive2.jpg') !important;
+  background-size: cover !important;
+}
+#drawerBg.diesel {
+  background-image: url('../img/taxi2.jpg') !important;
+  background-size: cover !important;
+}
+#drawerBg.bioDiesel {
+  background-image: url('../img/taxi2.jpg') !important;
+  background-size: cover !important;
+}
+#drawerBg.source {
+  background-image: url('../img/source.jpg') !important;
+  background-size: cover !important;
+}
+#drawerBg.greenhouse {
+  background-image: url('../img/taxi2.jpg') !important;
+  background-size: cover !important;
+}
+#drawerBg.volkerLofts {
+  background-image: url('../img/taxi2.jpg') !important;
+  background-size: cover !important;
+}
+#drawerBg.grandCherokee {
+  background-image: url('../img/taxi2.jpg') !important;
+  background-size: cover !important;
+}
+#drawerBg.citySpirit {
+  background-image: url('../img/cityspirit.jpg') !important;
+  background-size: cover !important;
+}
+#drawerBg.freightResidences {
+  background-image: url('../img/taxi2.jpg') !important;
   background-size: cover !important;
 }
 table.vertical-center,
