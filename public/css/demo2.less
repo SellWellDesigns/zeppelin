@@ -61,12 +61,12 @@
 @input-bg:                       #353535;
 @input-bg-disabled:              @gray-lighter;
 
-@input-color:                    @gray;
+@input-color:                    #fff;
 @input-border:                   #353535;
 @input-border-radius:            @border-radius-base;
 @input-border-focus:             #66afe9;
 
-@input-color-placeholder:        #fff;
+@input-color-placeholder:        #ccc;
 
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
 @input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
@@ -96,13 +96,6 @@ html, body {
 #content {
     width: 100%;
     height: 100%;
-    overflow: scroll;
-
-    > li {
-        height: 100%;
-        padding: 20px;
-        position: relative;
-    }
 }
 
 #backButton {
@@ -118,7 +111,18 @@ html, body {
 
 @brand1: #f9ec23;
 
+@btn-default-border: #fff;
 
+.btn {
+    font-family: @font-family-sans-serif;
+    font-weight: 900;
+    padding: 10px;
+}
+
+.btn-default:hover {
+    background-color: @brand1;
+    border-color: @brand1;
+}
 
 nav.navbar {
     z-index: 1000;
@@ -168,7 +172,7 @@ nav.navbar {
         font-family: @headings-font-family;
 
         p {
-            font-size: 100px;
+            font-size: 60px;
         }
 
         cite {
@@ -182,10 +186,11 @@ nav.navbar {
     background: #7e7e7e;
     color: #000;
 
-    h1 {
+    .lead {
         color: @brand1;
         line-height: 1.5;
         margin-bottom: 60px;
+        font-size: 22px;
     }
 
     p {
@@ -198,7 +203,7 @@ nav.navbar {
 
     a {
         color: #000;
-        font-size: 75px;
+        font-size: 40px;
         font-family: @headings-font-family;
 
         &:hover {
@@ -218,6 +223,30 @@ nav.navbar {
 #contact {
     background: #7e7e7e;
     color: #fff;
+
+    address {
+        font-size: 30px;
+        font-family: @headings-font-family;
+    }
+
+    .map-padding-fix {
+        padding-bottom: 30px;
+    }
+
+    .map {
+        position: relative;
+        background: @brand1;
+        margin-left: 10px;
+        margin-top: 10px;
+        height: 450px;
+        padding-bottom: 40px;
+
+        iframe {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+        }
+    }
 }
 
 .full-height {
@@ -310,46 +339,57 @@ table.vertical-center, table.vertical-center tr, table.vertical-center tr td {
     width: 600px;
 }
 
-
-.stack {
-    height: 400% !important;
-
-    > li {
-        width: 100%;
+@media (min-width: @screen-sm-min){
+    #content {
+        overflow: scroll;
+        
+        > li {
+            height: 100%;
+            padding: 20px;
+            position: relative;
+        }
     }
 
-    .pinned {
-        position: fixed !important;
-        top: 0 !important;
-    }
+    .stack {
+        height: 400% !important;
 
-    #intro {
-        position: absolute;
-        top: 0;
-        z-index: 2000;
-    }
+        > li {
+            width: 100%;
+        }
 
-    #quotes {
-        position: absolute;
-        top: 100%;
-        z-index: 4;
-    }
+        .pinned {
+            position: fixed !important;
+            top: 0 !important;
+        }
 
-    #about {
-        position: absolute;
-        top: 200%;
-        z-index: 15;
-    }
+        #intro {
+            position: absolute;
+            top: 0;
+            z-index: 2000;
+        }
 
-    #projects {
-        position: absolute;
-        top: 300%;
-        z-index: 20;
-    }
+        #quotes {
+            position: absolute;
+            top: 100%;
+            z-index: 4;
+        }
 
-    #contact {
-        position: absolute;
-        top: 400%;
-        z-index: 25;
+        #about {
+            position: absolute;
+            top: 200%;
+            z-index: 15;
+        }
+
+        #projects {
+            position: absolute;
+            top: 300%;
+            z-index: 20;
+        }
+
+        #contact {
+            position: absolute;
+            top: 400%;
+            z-index: 25;
+        }
     }
 }

@@ -1607,7 +1607,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #555555;
+  color: #ffffff;
   vertical-align: middle;
 }
 .form-control {
@@ -1617,7 +1617,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.428571429;
-  color: #555555;
+  color: #ffffff;
   vertical-align: middle;
   background-color: #353535;
   background-image: none;
@@ -1635,17 +1635,17 @@ output {
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .form-control:-moz-placeholder {
-  color: #ffffff;
+  color: #cccccc;
 }
 .form-control::-moz-placeholder {
-  color: #ffffff;
+  color: #cccccc;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #ffffff;
+  color: #cccccc;
 }
 .form-control::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #cccccc;
 }
 .form-control[disabled],
 .form-control[readonly],
@@ -1936,7 +1936,7 @@ fieldset[disabled] .btn {
 .btn-default {
   color: #333333;
   background-color: #ffffff;
-  border-color: #cccccc;
+  border-color: #ffffff;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -1945,7 +1945,7 @@ fieldset[disabled] .btn {
 .open .dropdown-toggle.btn-default {
   color: #333333;
   background-color: #ebebeb;
-  border-color: #adadad;
+  border-color: #e0e0e0;
 }
 .btn-default:active,
 .btn-default.active,
@@ -1968,7 +1968,7 @@ fieldset[disabled] .btn-default:active,
 .btn-default[disabled].active,
 fieldset[disabled] .btn-default.active {
   background-color: #ffffff;
-  border-color: #cccccc;
+  border-color: #ffffff;
 }
 .btn-default .badge {
   color: #ffffff;
@@ -3296,7 +3296,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #555555;
+  color: #ffffff;
   text-align: center;
   background-color: #eeeeee;
   border: 1px solid #353535;
@@ -5971,12 +5971,6 @@ body {
 #content {
   width: 100%;
   height: 100%;
-  overflow: scroll;
-}
-#content > li {
-  height: 100%;
-  padding: 20px;
-  position: relative;
 }
 #backButton {
   position: fixed;
@@ -5984,6 +5978,15 @@ body {
   right: 20px;
   font-size: 30px;
   color: #000;
+}
+.btn {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  padding: 10px;
+}
+.btn-default:hover {
+  background-color: #f9ec23;
+  border-color: #f9ec23;
 }
 nav.navbar {
   z-index: 1000;
@@ -6028,7 +6031,7 @@ nav.navbar a {
   font-family: 'Merriweather Sans', sans-serif;
 }
 #quotes blockquote p {
-  font-size: 100px;
+  font-size: 60px;
 }
 #quotes blockquote cite {
   color: #fff;
@@ -6038,10 +6041,11 @@ nav.navbar a {
   background: #7e7e7e;
   color: #000;
 }
-#about h1 {
+#about .lead {
   color: #f9ec23;
   line-height: 1.5;
   margin-bottom: 60px;
+  font-size: 22px;
 }
 #about p {
   line-height: 1.5;
@@ -6051,7 +6055,7 @@ nav.navbar a {
 }
 #projects a {
   color: #000;
-  font-size: 75px;
+  font-size: 40px;
   font-family: 'Merriweather Sans', sans-serif;
 }
 #projects a:hover {
@@ -6064,6 +6068,26 @@ nav.navbar a {
 #contact {
   background: #7e7e7e;
   color: #fff;
+}
+#contact address {
+  font-size: 30px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+#contact .map-padding-fix {
+  padding-bottom: 30px;
+}
+#contact .map {
+  position: relative;
+  background: #f9ec23;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 450px;
+  padding-bottom: 40px;
+}
+#contact .map iframe {
+  position: absolute;
+  top: -10px;
+  left: -10px;
 }
 .full-height {
   height: 100%;
@@ -6148,38 +6172,48 @@ table.vertical-center tr td {
   font-weight: 400;
   width: 600px;
 }
-.stack {
-  height: 400% !important;
-}
-.stack > li {
-  width: 100%;
-}
-.stack .pinned {
-  position: fixed !important;
-  top: 0 !important;
-}
-.stack #intro {
-  position: absolute;
-  top: 0;
-  z-index: 2000;
-}
-.stack #quotes {
-  position: absolute;
-  top: 100%;
-  z-index: 4;
-}
-.stack #about {
-  position: absolute;
-  top: 200%;
-  z-index: 15;
-}
-.stack #projects {
-  position: absolute;
-  top: 300%;
-  z-index: 20;
-}
-.stack #contact {
-  position: absolute;
-  top: 400%;
-  z-index: 25;
+@media (min-width: 768px) {
+  #content {
+    overflow: scroll;
+  }
+  #content > li {
+    height: 100%;
+    padding: 20px;
+    position: relative;
+  }
+  .stack {
+    height: 400% !important;
+  }
+  .stack > li {
+    width: 100%;
+  }
+  .stack .pinned {
+    position: fixed !important;
+    top: 0 !important;
+  }
+  .stack #intro {
+    position: absolute;
+    top: 0;
+    z-index: 2000;
+  }
+  .stack #quotes {
+    position: absolute;
+    top: 100%;
+    z-index: 4;
+  }
+  .stack #about {
+    position: absolute;
+    top: 200%;
+    z-index: 15;
+  }
+  .stack #projects {
+    position: absolute;
+    top: 300%;
+    z-index: 20;
+  }
+  .stack #contact {
+    position: absolute;
+    top: 400%;
+    z-index: 25;
+  }
 }
