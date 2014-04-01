@@ -5988,6 +5988,12 @@ body {
   background-color: #f9ec23;
   border-color: #f9ec23;
 }
+.form-control:focus {
+  border-color: #353535;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
 nav.navbar {
   z-index: 1000;
   width: 100%;
@@ -6046,6 +6052,8 @@ nav.navbar a {
   line-height: 1.5;
   margin-bottom: 60px;
   font-size: 22px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 900;
 }
 #about p {
   line-height: 1.5;
@@ -6138,15 +6146,15 @@ nav.navbar a {
   background-size: cover !important;
 }
 #drawerBg.greenhouse {
-  background-image: url('../img/taxi2.jpg') !important;
+  background-image: url('../img/greenhouse.jpg') !important;
   background-size: cover !important;
 }
 #drawerBg.volkerLofts {
-  background-image: url('../img/taxi2.jpg') !important;
+  background-image: url('../img/volker.jpg') !important;
   background-size: cover !important;
 }
 #drawerBg.grandCherokee {
-  background-image: url('../img/taxi2.jpg') !important;
+  background-image: url('../img/path.jpg') !important;
   background-size: cover !important;
 }
 #drawerBg.citySpirit {

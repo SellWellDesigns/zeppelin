@@ -37,24 +37,21 @@ $(function(){
         e.preventDefault();
 
         var
-            section = $(this).attr('href'), 
-            $el     = $( section )
+            section   = $(this).attr('href'), 
+            $el       = $( section ),
+            $projects = $('#projects')
         ;
+        
+        
+        $projects.addClass('pinned');
+        $('[data-spy="pin"]').not($projects).removeClass('pinned');
 
-        // $('html, body')
-        //     .animate({
-        //         scrollTop: $('#projects').position().top
-        //     })
-        // ;
+        $('.drawer').not($el).hide();
+        $el.fadeIn();
 
         $('#drawerBg')
-            .hide()
-            .addClass( section.replace('#', '') )
-            .fadeIn();
-
-        $('.drawer').fadeOut('fast', function(){
-            $el.fadeIn();
-        });
+            .removeClass('taxi1 taxi2 freight drive1 drive2 diesel bioDiesel source greenhouse volkerLofts grandCherokee citySpirit freightResidences')
+            .addClass( section.replace('#', '') );
 
         return false;
     });
