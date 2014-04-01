@@ -145,6 +145,7 @@ nav.navbar {
     a {
         text-transform: uppercase;
         font-weight: 300;
+        font-size: 18px;
     }
 }
 
@@ -197,27 +198,32 @@ nav.navbar {
         color: @brand1;
         line-height: 1.5;
         margin-bottom: 60px;
-        font-size: 22px;
+        font-size: 34px;
+        // font-size: 22px;
         font-family: @headings-font-family;
         font-weight: 900;
     }
 
     p {
         line-height: 1.5;
+        text-transform: uppercase;
     }
 }
 
 #projects {
     background: #fff;
 
-    a {
-        color: #000;
-        font-size: 40px;
-        font-family: @headings-font-family;
+    .list-unstyled {
+        a {
+            color: #000;
+            font-size: 40px;
+            font-family: @headings-font-family;
+            display: block;
 
-        &:hover {
-            color: @brand1;
-            text-decoration: none;
+            &:hover {
+                color: @brand1;
+                text-decoration: none;
+            }
         }
     }
 

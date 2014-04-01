@@ -6007,6 +6007,7 @@ nav.navbar.pinned {
 nav.navbar a {
   text-transform: uppercase;
   font-weight: 300;
+  font-size: 18px;
 }
 #intro {
   position: relative;
@@ -6051,22 +6052,24 @@ nav.navbar a {
   color: #f9ec23;
   line-height: 1.5;
   margin-bottom: 60px;
-  font-size: 22px;
+  font-size: 34px;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 900;
 }
 #about p {
   line-height: 1.5;
+  text-transform: uppercase;
 }
 #projects {
   background: #fff;
 }
-#projects a {
+#projects .list-unstyled a {
   color: #000;
   font-size: 40px;
   font-family: 'Merriweather Sans', sans-serif;
+  display: block;
 }
-#projects a:hover {
+#projects .list-unstyled a:hover {
   color: #f9ec23;
   text-decoration: none;
 }
@@ -6122,7 +6125,7 @@ nav.navbar a {
   background-size: cover !important;
 }
 #drawerBg.freight {
-  background-image: url('../img/freight.jpg') !important;
+  background-image: url('../img/freight.JPG') !important;
   background-size: cover !important;
 }
 #drawerBg.drive1 {

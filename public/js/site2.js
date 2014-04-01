@@ -56,4 +56,15 @@ $(function(){
         return false;
     });
     
+
+    $('#scrollDown').on('click', function(e){
+        e.preventDefault();
+
+        $('body').animate({
+            scrollTop: $('#intro').outerHeight()
+        });
+
+        return false;
+    });
+
 });//end doc ready
