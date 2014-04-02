@@ -3903,18 +3903,18 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-color: rgba(0, 0, 0, 0);
 }
 .navbar-default .navbar-brand {
-  color: #484848;
+  color: #f9ec23;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #2f2f2f;
+  color: #e3d506;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
   color: #777777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #484848;
+  color: #f9ec23;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -3924,7 +3924,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #484848;
+  color: #f9ec23;
   background-color: rgba(0, 0, 0, 0);
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -3951,11 +3951,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
   background-color: rgba(0, 0, 0, 0);
-  color: #484848;
+  color: #f9ec23;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #484848;
+    color: #f9ec23;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -3965,7 +3965,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #484848;
+    color: #f9ec23;
     background-color: rgba(0, 0, 0, 0);
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
@@ -3976,7 +3976,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default .navbar-link {
-  color: #484848;
+  color: #f9ec23;
 }
 .navbar-default .navbar-link:hover {
   color: #333333;
@@ -6006,7 +6006,7 @@ nav.navbar.pinned {
 }
 nav.navbar a {
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
 }
 #intro {
