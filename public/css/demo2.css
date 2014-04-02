@@ -6136,14 +6136,6 @@ nav.navbar a {
   background-image: url('../img/drive2.jpg') !important;
   background-size: cover !important;
 }
-#drawerBg.diesel {
-  background-image: url('../img/taxi2.jpg') !important;
-  background-size: cover !important;
-}
-#drawerBg.bioDiesel {
-  background-image: url('../img/taxi2.jpg') !important;
-  background-size: cover !important;
-}
 #drawerBg.source {
   background-image: url('../img/source.jpg') !important;
   background-size: cover !important;
@@ -6165,7 +6157,7 @@ nav.navbar a {
   background-size: cover !important;
 }
 #drawerBg.freightResidences {
-  background-image: url('../img/taxi2.jpg') !important;
+  background-image: url('../img/freight_residences.jpg') !important;
   background-size: cover !important;
 }
 table.vertical-center,
