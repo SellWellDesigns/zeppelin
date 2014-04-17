@@ -36,7 +36,7 @@ html
                     td
                         .container
                             blockquote#quote
-                                p Over forty years on innovative mixed-use projects in Denver’s urban core neighborhoods
+                                p.responsive-text Over forty years on innovative mixed-use projects in Denver’s urban core neighborhoods
                                 //- cite.pull-right(title="micky zeppelin") - micky zeppelin
         li#about(data-spy="pin")
             table.vertical-center
@@ -59,7 +59,7 @@ html
             #drawerBg
             .container.full-height
                 .row.full-height
-                    .col-sm-4.full-height
+                    #projectList.col-sm-4.full-height
                         ul.list-unstyled
                             li
                                 a(href="#taxi1", data-toggle="drawer") taxi I
@@ -94,7 +94,7 @@ html
                             tr
                                 td
                                     #taxi1.drawer
-                                        h1 taxi I
+                                        h1.responsive-text taxi I
                                         .well
                                             ul.list-unstyled
                                                 li 
@@ -112,7 +112,7 @@ html
                                     
 
                                     #taxi2.drawer
-                                        h1 taxi II
+                                        h1.responsive-text taxi II
                                         .well
                                             ul.list-unstyled
                                                 li > 44 units, 60,000 sf of office space
@@ -122,7 +122,7 @@ html
 
 
                                     #freight.drawer
-                                        h1 freight
+                                        h1.responsive-text freight
                                         .well
                                             ul.list-unstyled
                                                 li > 29,505
@@ -131,7 +131,7 @@ html
                                             p Designed by Stephen Dynia Architects, transformed a 30,000 sf mid-century, brick, dock-high shipping terminal into highly functional, creative work spaces. Freight attracted more than a dozen new economy businesses, including an early childhood education center. The reuse of the 50-year-old building includes 5/8-inch thick tempered hockey glass panels from the Pepsi Center, reclaimed bowling lanes have been transformed into office furniture and workstations, glass garage doors and an environmentally sensitive HVAC system. Freight contains a communal conference room, a shared communal kitchen/ lounge and the Freight Plaza, which has an outdoor movie theater.
 
                                     #drive1.drawer
-                                        h1 drive 1
+                                        h1.responsive-text drive 1
                                         .well
                                             ul.list-unstyled
                                                 li > 40,000 SF
@@ -141,7 +141,7 @@ html
 
 
                                     #drive2.drawer
-                                        h1 drive 2
+                                        h1.responsive-text drive 2
                                         .well
                                             ul.list-unstyled
                                                 li > 58,000 SF
@@ -151,7 +151,7 @@ html
         
 
                                     //- #diesel.drawer
-                                    //-     h1 diesel
+                                    //-     h1.responsive-text diesel
                                     //-     .well
                                     //-         ul.list-unstyled
                                     //-             li > 44 units, 60,000 sf of office space???
@@ -161,7 +161,7 @@ html
 
 
                                     //- #bioDiesel.drawer
-                                    //-     h1 bio diesel
+                                    //-     h1.responsive-text bio diesel
                                     //-     .well
                                     //-         ul.list-unstyled
                                     //-             li > 7,100 SF
@@ -172,7 +172,7 @@ html
 
                                     
                                     #source.drawer
-                                        h1 source
+                                        h1.responsive-text source
                                         .well
                                             ul.list-unstyled
                                                 li > 25,000 SF
@@ -182,7 +182,7 @@ html
         
 
                                     #greenhouse.drawer
-                                        h1 greenhouse
+                                        h1.responsive-text greenhouse
                                         .well
                                             ul.list-unstyled
                                                 li > 58 units
@@ -193,7 +193,7 @@ html
 
 
                                     #volkerLofts.drawer
-                                        h1 volker lofts
+                                        h1.responsive-text volker lofts
                                         .well
                                             ul.list-unstyled
                                                 li > 22 units
@@ -202,7 +202,7 @@ html
                                             p In 1992 Zeppelin transformed an abandoned 6-story heavy timber and brick warehouse into the 22-unit Volker Lofts. The building is located where Wazee Street crosses Cherry Creek and was one of the third residential loft buildings in LoDo.
 
                                     #grandCherokee.drawer
-                                        h1 grand cherokee
+                                        h1.responsive-text grand cherokee
                                         .well
                                             ul.list-unstyled
                                                 li > 60 units
@@ -211,7 +211,7 @@ html
                                             p In 1998 Zeppelin built the Grand Cherokee Lofts, a a mixed-use urban infill environment located in the Golden Triangle, one of Denver’s evolving in-town loft districts. Built on a formerly vacant lot, the Grand Cherokee contains 36 loft residences, three town homes, an art gallery, and a graphic design business. Conceived to create an activated live/work presence in the neighborhood, the Grand Cherokee represents the best in both infill and scaled mixed-use development. Central to the owners’ interests on this project was the opportunity to create a diverse range of living spaces within the context of a cohesive design. The 36 loft units were designed as a series of four double-height volumes growing upward from street level. Large industrial sash windows allow broad views of the downtown skyline and adjacent arts district. The three town homes, complete with individual gardens, are tucked behind the structure’s other uses and offer a quiet retreat form adjacent street activity. The two distinct unit types are linked by a central courtyard space that serves as an informal community gathering space and point of semi-public interaction.
         
                                     #citySpirit.drawer
-                                        h1 city spirit
+                                        h1.responsive-text city spirit
                                         .well
                                             ul.list-unstyled
                                                 li > 58,000 SF
@@ -220,7 +220,7 @@ html
                                             p In 1984 Mickey Zeppelin moved his office to 1434 Blake Street, opening the City Spirit Café (1984-1999). City Spirit Cafe was not only a restaurant, but an architectural bookstore, as well. The opening of City Spirit Cafe opened four years before the Lower Downtown Historic District was formally established.
         
                                     #freightResidences.drawer
-                                        h1 freight residences
+                                        h1.responsive-text freight residences
                                         .well
                                             ul.list-unstyled
                                                 li > 49 units
@@ -276,10 +276,8 @@ html
                                             style="border:3px solid #353535"
                                         )
 
-    #backButton
-        a(href="/") <-- Back
-
     script(src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js")
     script(src="/vendor/bootstrap/dist/js/bootstrap.min.js")
+    script(src="/vendor/FitText.js/jquery.fittext.js")
     script(src="/vendor/stroll/js/stroll.min.js")
     script(src="/js/site2.js")

@@ -6167,15 +6167,56 @@ table.vertical-center tr td {
   height: 100%;
   vertical-align: middle;
 }
+table.vertical-center *,
+table.vertical-center tr *,
+table.vertical-center tr td * {
+  max-width: 100%;
+}
 .well {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
   font-weight: 400;
-  width: 600px;
 }
-@media (min-width: 768px) {
+@media (max-width: 991px) {
+  #drawerBg {
+    display: none;
+  }
+  #projectList {
+    display: none;
+  }
+  .drawer {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+  .map-padding-fix {
+    padding-top: 50px;
+  }
+  #quotes {
+    padding: 50px 0;
+  }
+  #quotes blockquote p {
+    font-size: 30px;
+  }
+  #projects {
+    display: block;
+    width: 100%;
+  }
+  #projects .vertical-center * {
+    display: block;
+    width: 100%;
+  }
+  #projects .drawer h1 {
+    font-size: 40px;
+  }
+  #contact address {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 991px) {
   #content {
     overflow: scroll;
   }

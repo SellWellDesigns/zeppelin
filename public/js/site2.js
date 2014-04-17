@@ -8,6 +8,8 @@ $(function(){
         $content  = $('#content')
     ;
 
+    // $('.responsive-text').fitText();
+
     if($content.hasClass('stack')){
 
         $('[data-spy="pin"]').each(function(){
@@ -39,7 +41,8 @@ $(function(){
         var
             section   = $(this).attr('href'), 
             $el       = $( section ),
-            $projects = $('#projects')
+            $projects = $('#projects'),
+            bg        = $('#drawerBg')
         ;
         
         
@@ -49,9 +52,15 @@ $(function(){
         $('.drawer').not($el).hide();
         $el.fadeIn();
 
-        $('#drawerBg')
-            .removeClass('taxi1 taxi2 freight drive1 drive2 diesel bioDiesel source greenhouse volkerLofts grandCherokee citySpirit freightResidences')
-            .addClass( section.replace('#', '') );
+        bg
+            .fadeOut('fast', function(){
+                bg
+                    .removeClass('taxi1 taxi2 freight drive1 drive2 diesel bioDiesel source greenhouse volkerLofts grandCherokee citySpirit freightResidences')
+                    .addClass( section.replace('#', '') )
+                    .fadeIn('fast')
+                ;
+            })
+        ;
 
         return false;
     });

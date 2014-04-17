@@ -29,7 +29,8 @@
     "angularLocalStorage": "*",
     "bootstrap": "*",
     "font-awesome": "*",
-    "stroll": "*"
+    "stroll": "*",
+    "FitText.js": "*"
   },
   "resolutions": {
     "angular": "1.2.0-rc.3"
