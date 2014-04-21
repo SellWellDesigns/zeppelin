@@ -2,12 +2,21 @@
  * Module dependencies.
  */
 var 
-    express = require('express'),
-    http    = require('http'),
-    path    = require('path')
+    express    = require('express'),
+    http       = require('http'),
+    path       = require('path'),
+    nodemailer = require('nodemailer')
 ;
 
 var app = express();
+
+var smtpTransport = nodemailer.createTransport("SMTP",{
+    service: "Gmail",
+    auth: {
+        user: "",
+        pass: ""
+    }
+});
 
 // all environments
 app.set('port', process.env.PORT || 4000);
@@ -28,44 +37,36 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-var animations = [
-    'fixed-bg',
-    'stack',
-    'stack--fixed',
-    'grow',
-    'cards',
-    'curl',
-    'wave',
-    'flip',
-    'fly',
-    'fly-simplified',
-    'fly-reverse',
-    'helix',
-    'fan',
-    'papercut',
-    'twirl'
-];
-
 app.get('/', function(req, res){
-    res.render('index', {
-        animations: animations
-    });
-})
-
-animations.forEach(function(view){
-    app.get('/' + view, function(req, res){
-        res.render('animation', {
-            animation: view
-        });
-    });
+    res.render('index');
 });
 
-app.get('/demo1', function(req, res){
-    res.render('demo1');
-});
+app.post('/contact', function(req, res){
+    var body, name, email, message;
 
-app.get('/demo2', function(req, res){
-    res.render('demo2');
+    body    = req.body;
+    name    = body.name;
+    email   = body.email;
+    message = body.message;
+
+    smtpTransport.sendMail(
+        {
+            from: 'Zeppelin Places <noreply@zeppelinplaces.com>',
+            to: 'conar@sellwelldesigns.com',
+            subject: 'Message from ZeppelinPlaces.com',
+            text: 'Name: ' + name + '\r\nEmail: ' + email + '\r\nMessage: ' + message,
+            html: '<strong>Name:</strong> ' + name + '<br /><strong>Email:</strong> ' + email + '<br /><strong>Message:</strong> ' + message
+        },
+        function(err, response){
+            if(err){
+                console.log('Mail Error', err);
+            }
+            else {
+                console.log('Message Sent: ', response.message);
+            }
+            res.redirect('/');
+        }
+    );
 });
 
 http.createServer(app).listen(app.get('port'), function(){

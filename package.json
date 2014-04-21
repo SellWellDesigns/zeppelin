@@ -8,6 +8,15 @@
   "dependencies": {
     "express": "3.4.0",
     "jade": "*",
-    "less-middleware": "*"
+    "less-middleware": "*",
+    "nodemailer": "*"
+  },
+  "devDependencies": {
+    "grunt-contrib-jade": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-htmlmin": "*"
   }
 }

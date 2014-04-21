@@ -1,29 +1,283 @@
 doctype html
 html
   head
-    title Zeppelin Test
-    link(rel='stylesheet', href='/css/style.css')
+    title Zeppelin
+    link(rel='stylesheet', href='/css/styles.css')
     link(rel='stylesheet', href='/vendor/stroll/css/stroll.min.css')
   body
-    .container
-        .row
-            .col-sm-6
-                h1 Different Animations
+    nav.navbar.navbar-default.pinned(role="navigation")
+        .navbar-header
+            button.navbar-toggle(type="button", data-toggle="collapse", data-target="#nav")
+                span.sr-only Toggle Navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+        #nav.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+                li.active
+                    a(href="#about") about
+                li
+                    a(href="#projects") projects
+                li
+                    a(href="#contact") contact
 
-                ul.list-unstyled
-                    - each view in animations
-                        li
-                            a(href="/"+view)= view
-            .col-sm-6
-                h1 Demo Version
+    ul#content(class="list-unstyled stack")
+        li#intro
+            table.vertical-center
+                tr
+                    td
+                        .container
+                            img.img-responsive(src="/img/zeppelin-header-logo.png", alt="Zeppelin Development")
+            a#scrollDown(href='#quotes')
+                i.down-arrow
+        li#quotes.pinned
+            table.vertical-center
+                tr
+                    td
+                        .container
+                            blockquote#quote
+                                p.responsive-text Over forty years on innovative mixed-use projects in Denver’s urban core neighborhoods
+                                //- cite.pull-right(title="micky zeppelin") - micky zeppelin
+        li#about(data-spy="pin")
+            table.vertical-center
+                tr
+                    td
+                        .container
+                            p.lead Zeppelin Development is recognized for over forty years on innovative mixed-use projects in Denver’s urban core neighborhoods.  
 
-                ul.list-unstyled
-                    li
-                        a(href="/demo1") Demo 1
-                    li
-                        a(href="/demo2") Demo 2
+                            .row
+                                .col-sm-6
+                                    p Fundamental to the Zeppelins’ success is identifying underused properties in primarily former-industrial areas- this strategy began in the mid-1970’s with catalytic projects in Lower Downtown, continued in the 80’s and 90’s with beginning stage redevelopment of the Golden Triangle neighborhood and is currently driving the development of Denver’s River North (RiNo) area. 
+                                    p The father and son team Mickey and Kyle Zeppelin are committed to promoting social change through intelligently designed projects that address unmet needs in the market and provide a catalyst to surrounding neighborhoods.  As Denver natives, the Zeppelins and their team of collaborative partners have received recognition and multiple awards for TAXI, the repurposed 20-acre former Yellow Cab terminal on the Platte River in RiNo.  TAXI's success, including 100% occupancy of over 200,000 square feet, is based on the development of workspaces and complementary amenities that are aligned with the unique needs of new economy businesses.
+                                
+                                .col-sm-6
+                                    p Current projects under development include additional new economy work space and high density family housing at TAXI intended for underserved demographics not currently addressed by the multi-tenant rental boom, such as urban families with young children. 
+                                    p Zeppelin Development recently opened the Source, a new generation urban market that combines some of the most accomplished independent artisan food and beverage producers in the region.  Additional development activity is in the planning and design phases for an expansion of The Source onto the neighboring site, including expansion of artisan production space, food and beverage offerings and a hospitality component
 
+
+        li#projects(data-spy="pin")
+            #drawerBg
+            .container.full-height
+                .row.full-height
+                    #projectList.col-sm-4.full-height
+                        ul.list-unstyled
+                            li
+                                a(href="#taxi1", data-toggle="drawer") taxi I
+                            li
+                                a(href="#taxi2", data-toggle="drawer") taxi II
+                            li
+                                a(href="#freight", data-toggle="drawer") freight
+                            li
+                                a(href="#drive1", data-toggle="drawer") drive
+                            li
+                                a(href="#drive2", data-toggle="drawer") drive 2
+                            //- li
+                            //-     a(href="#diesel", data-toggle="drawer") diesel
+                            //- li
+                            //-     a(href="#bioDiesel", data-toggle="drawer") bio diesel
+                            li
+                                a(href="#source", data-toggle="drawer") the source
+                            li
+                                a(href="#greenhouse", data-toggle="drawer") greenhouse
+                            li
+                                a(href="#volkerLofts", data-toggle="drawer") volker lofts
+                            li
+                                a(href="#grandCherokee", data-toggle="drawer") grand cherokee
+                            li
+                                a(href="#citySpirit", data-toggle="drawer") city spirit
+                            li
+                                a(href="#freightResidences", data-toggle="drawer") freight residences
+
+
+                    .col-sm-8.full-height
+                        table.vertical-center
+                            tr
+                                td
+                                    #taxi1.drawer
+                                        h1.responsive-text taxi I
+                                        .well
+                                            ul.list-unstyled
+                                                li 
+                                                    strong >
+                                                    | 26,665 SQ FT
+                                                li 
+                                                    strong >
+                                                    | completed jan 2007
+                                                li 
+                                                    strong > 
+                                                    | 3457 Ringsby Ct
+
+                                            p &nbsp;
+                                            p TAXI 1 was the former Yellow Cab dispatch center and corporate headquarters. Completed in 2001, and designed by Alan Eban Brown, Zeppelin Development transformed the 25,000 sf brick building into flexible work spaces for a variety of creative businesses. A defining wide Main Street runs north and south through the building. Located in what was the Yellow Cab mechanic shop, Fuel Cafe opened in TAXI 1 in 2008. In addition to Fuel Cafe, there is a large communal kitchen and dining space, which provides tenants with a great space to get out of their office and socialize with their neighbors.
+                                    
+
+                                    #taxi2.drawer
+                                        h1.responsive-text taxi II
+                                        .well
+                                            ul.list-unstyled
+                                                li > 44 units, 60,000 sf of office space
+                                                li > completed jan 2007
+                                                li > 3457 Ringsby Ct
+                                            p A new, mixed-use building, opened in August 2008. Dubbed a “Landscraper” because the 550-foot long structure stood on end would be a 55-story skyscraper. Will Bruder, David Baker, Harry Teague and Alan Eban Brown collaborated on the design of this project, which includes 44 residential units, 60,000 sf of office space, TAXI Fitness (gym, steam room & showers), a communal conference room and Pilates Aligned at TAXI.
+
+
+                                    #freight.drawer
+                                        h1.responsive-text freight
+                                        .well
+                                            ul.list-unstyled
+                                                li > 29,505
+                                                li > completed jan 2007
+                                                li > 3457 Ringsby Ct
+                                            p Designed by Stephen Dynia Architects, transformed a 30,000 sf mid-century, brick, dock-high shipping terminal into highly functional, creative work spaces. Freight attracted more than a dozen new economy businesses, including an early childhood education center. The reuse of the 50-year-old building includes 5/8-inch thick tempered hockey glass panels from the Pepsi Center, reclaimed bowling lanes have been transformed into office furniture and workstations, glass garage doors and an environmentally sensitive HVAC system. Freight contains a communal conference room, a shared communal kitchen/ lounge and the Freight Plaza, which has an outdoor movie theater.
+
+                                    #drive1.drawer
+                                        h1.responsive-text drive 1
+                                        .well
+                                            ul.list-unstyled
+                                                li > 40,000 SF
+                                                li > completed jan 2007
+                                                li > 3457 Ringsby Ct
+                                            p Completed in 2012, Drive 1 is a four story, 40,000 sf commercial building to accommodate new and innovative businesses. Designed by Stephen Dynia Architects, Drive provides shared amenities, social spaces and innovative workplace opportunities, which combine to define a new genre of office environment. The unconventional placement of large garage doors on all levels opens the building to the urban skyline and to mountain views. This connection to the land and cityscape allow for light and air and create a sense of workplace connection to the outdoors. A linear skylight with glass floors below defines interior circulation and transmits light through the core of the building. In an egalitarian innovation, locating small businesses on the top floor for optimum light and view, inverts the standard conventions of commercial building design. Also, the building lobby functions as a café and conference space enhancing social interaction within the building as well as its connection to the inhabitants of the other buildings in the development.
+
+
+                                    #drive2.drawer
+                                        h1.responsive-text drive 2
+                                        .well
+                                            ul.list-unstyled
+                                                li > 60,000 SF
+                                                li > completed july 2014
+                                                li > 3461 Ringsby Ct
+                                            p Four stories, 60,000 sq ft, LEED Certified, flooded with natural light, encompassing amenities designed to enhance your work and life experiences – and that’s just the start.  We enhance productivity through design, science and technological innovation – ensuring people are not only happy about the place they work, but are happy to come to work. In the new economy workplace, innovation, collaboration and inspiration are influenced by your surroundings.
+        
+
+                                    //- #diesel.drawer
+                                    //-     h1.responsive-text diesel
+                                    //-     .well
+                                    //-         ul.list-unstyled
+                                    //-             li > 44 units, 60,000 sf of office space???
+                                    //-             li > completed jan 2007
+                                    //-             li > 3457 Ringsby Ct
+                                    //-         p massa sit amet ligula laoreet euismod. Maecenas sodales erat a enim elementum sagittis. Donec velit nisl, tempus nec nibh id, ullamcorper commodo nunc. Pellentesque a tempor ligula. Donec vitae augue eu dolor imperdiet lobortis a sed sapien. Cras gravida eu arcu eu dignissim. Nulla facilisis, urna suscipit condimentum porttitor, odio ligula condimentum justo, eu bibendum eros purus
+
+
+                                    //- #bioDiesel.drawer
+                                    //-     h1.responsive-text bio diesel
+                                    //-     .well
+                                    //-         ul.list-unstyled
+                                    //-             li > 7,100 SF
+                                    //-             li > completed jan 2007
+                                    //-             li > 3457 Ringsby Ct
+                                    //-         p massa sit amet ligula laoreet euismod. Maecenas sodales erat a enim elementum sagittis. Donec velit nisl, tempus nec nibh id, ullamcorper commodo nunc. Pellentesque a tempor ligula. Donec vitae augue eu dolor imperdiet lobortis a sed sapien. Cras gravida eu arcu eu dignissim. Nulla facilisis, urna suscipit condimentum porttitor, odio ligula condimentum justo, eu bibendum eros purus
+
+
+                                    
+                                    #source.drawer
+                                        h1.responsive-text source
+                                        .well
+                                            ul.list-unstyled
+                                                li > 25,000 SF
+                                                li > completed dec 2013
+                                                li > 3350 Brighton Blvd
+                                            p The Source offers a one-stop shopping experience for the food-obsessed while also providing some of Denver’s best artisans with an outlet for their crafts. The openness of the building speaks to its community-oriented philosophy. It was repurposed under the guidance of architect Stephen Dynia with a strong commitment to preserving its industrial identity while adapting it for its current use. The industrial design with clear layers of new materials complementing the original shell conveys the integrity and edginess both of the tenants themselves and of this new marketplace.
+        
+
+                                    #greenhouse.drawer
+                                        h1.responsive-text greenhouse
+                                        .well
+                                            ul.list-unstyled
+                                                li > 58 units
+                                                li > completed jan 2007
+                                                li > 3457 Ringsby Ct
+                                            p 58 light-filled, spacious and flexible living spaces with terraces, unmatched views and tranquil gardens, perfectly – and peacefully – located adjacent to the urban pulse of Cherry Creek. An atrium coffee bar, conference center, fitness room and underground parking offer convenience. Close-by parks, greenways and trails add to the unique character of this urban retreat.
+        
+
+
+                                    #volkerLofts.drawer
+                                        h1.responsive-text volker lofts
+                                        .well
+                                            ul.list-unstyled
+                                                li > 22 units
+                                                li > completed jan 2007
+                                                li > 3457 Ringsby Ct
+                                            p In 1992 Zeppelin transformed an abandoned 6-story heavy timber and brick warehouse into the 22-unit Volker Lofts. The building is located where Wazee Street crosses Cherry Creek and was one of the third residential loft buildings in LoDo.
+
+                                    #grandCherokee.drawer
+                                        h1.responsive-text grand cherokee
+                                        .well
+                                            ul.list-unstyled
+                                                li > 60 units
+                                                li > completed jan 2007
+                                                li > 3457 Ringsby Ct
+                                            p In 1998 Zeppelin built the Grand Cherokee Lofts, a a mixed-use urban infill environment located in the Golden Triangle, one of Denver’s evolving in-town loft districts. Built on a formerly vacant lot, the Grand Cherokee contains 36 loft residences, three town homes, an art gallery, and a graphic design business. Conceived to create an activated live/work presence in the neighborhood, the Grand Cherokee represents the best in both infill and scaled mixed-use development. Central to the owners’ interests on this project was the opportunity to create a diverse range of living spaces within the context of a cohesive design. The 36 loft units were designed as a series of four double-height volumes growing upward from street level. Large industrial sash windows allow broad views of the downtown skyline and adjacent arts district. The three town homes, complete with individual gardens, are tucked behind the structure’s other uses and offer a quiet retreat form adjacent street activity. The two distinct unit types are linked by a central courtyard space that serves as an informal community gathering space and point of semi-public interaction.
+        
+                                    #citySpirit.drawer
+                                        h1.responsive-text city spirit
+                                        .well
+                                            ul.list-unstyled
+                                                li > 58,000 SF
+                                                li > 1984-1999
+                                                li > 3457 Ringsby Ct
+                                            p In 1984 Mickey Zeppelin moved his office to 1434 Blake Street, opening the City Spirit Café (1984-1999). City Spirit Cafe was not only a restaurant, but an architectural bookstore, as well. The opening of City Spirit Cafe opened four years before the Lower Downtown Historic District was formally established.
+        
+                                    #freightResidences.drawer
+                                        h1.responsive-text freight residences
+                                        .well
+                                            ul.list-unstyled
+                                                li > 49 units
+                                                li > completed jan 2007
+                                                li > 3457 Ringsby Ct
+                                            p 49 residential units becoming available Spring 2015.
+        
+
+
+
+        li#contact
+            table.vertical-center
+                tr
+                    td
+                        .container
+                            .row
+                                .col-sm-6
+                                    address 3455 ringsby court #100
+                                        br
+                                        | 303.573.0781
+                                        br
+                                        | m-f 9:00 am - 5:00 pm
+
+                                    form(method='post', action='/contact')
+                                        .form-group
+                                            input.form-control.input-lg(
+                                                type='text',
+                                                name='name', 
+                                                placeholder='name'
+                                            )
+                                        .form-group
+                                            input.form-control.input-lg(
+                                                type='text',
+                                                name='email', 
+                                                placeholder='email'
+                                            )
+                                        .form-group
+                                            textarea.form-control.input-lg(
+                                                name='message',
+                                                rows='4',
+                                                placeholder='message'
+                                            )
+                                        .form-group
+                                            input.btn.btn-default.btn-block.btn-lg(type='submit', value='email')
+
+                                .col-sm-6.map-padding-fix
+                                    .map.clearfix
+                                        iframe(
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3066.554982743925!2d-104.98171400000003!3d39.77209899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7903a4456749%3A0xb37a3eb7161d3e0!2sZeppelin+Development!5e0!3m2!1sen!2sus!4v1395760144685",
+                                            width="100%",
+                                            height="450",
+                                            frameborder="0",
+                                            style="border:3px solid #353535"
+                                        )
 
     script(src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js")
     script(src="/vendor/bootstrap/dist/js/bootstrap.min.js")
+    script(src="/vendor/FitText.js/jquery.fittext.js")
+    script(src="/vendor/stroll/js/stroll.min.js")
     script(src="/js/site.js")

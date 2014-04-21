@@ -8,17 +8,14 @@ $(function(){
         $content  = $('#content')
     ;
 
+    // $('.responsive-text').fitText();
+
     if($content.hasClass('stack')){
 
         $('[data-spy="pin"]').each(function(){
             var $self = $(this);
             $self.data('offsetTop', $self.offset().top);
         });
-
-        $('nav.navbar')
-            .attr('data-spy', 'pin')
-            .data('offsetTop', $window.height())
-        ;
 
         $window.on('scroll', function(){
             var scrollTop = $window.scrollTop();
@@ -42,17 +39,41 @@ $(function(){
         e.preventDefault();
 
         var
-            section = $(this).attr('href'), 
-            $el     = $( section )
+            section   = $(this).attr('href'), 
+            $el       = $( section ),
+            $projects = $('#projects'),
+            bg        = $('#drawerBg')
         ;
+        
+        
+        $projects.addClass('pinned');
+        $('[data-spy="pin"]').not($projects).removeClass('pinned');
 
-        $('.drawer-wrapper').addClass( section.replace('#', '') );
+        $('.drawer').not($el).hide();
+        $el.fadeIn();
 
-        $('.drawer').fadeOut('fast', function(){
-            $el.fadeIn();
-        });
+        bg
+            .fadeOut('fast', function(){
+                bg
+                    .removeClass('taxi1 taxi2 freight drive1 drive2 diesel bioDiesel source greenhouse volkerLofts grandCherokee citySpirit freightResidences')
+                    .addClass( section.replace('#', '') )
+                    .fadeIn('fast')
+                ;
+            })
+        ;
 
         return false;
     });
     
+
+    $('#scrollDown').on('click', function(e){
+        e.preventDefault();
+
+        $('body').animate({
+            scrollTop: $('#intro').outerHeight()
+        });
+
+        return false;
+    });
+
 });//end doc ready
