@@ -8,8 +8,6 @@ $(function(){
         $content  = $('#content')
     ;
 
-    // $('.responsive-text').fitText();
-
     if($content.hasClass('stack')){
 
         $('[data-spy="pin"]').each(function(){

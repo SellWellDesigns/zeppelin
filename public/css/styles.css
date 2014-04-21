@@ -6074,7 +6074,7 @@ nav.navbar a {
   text-decoration: none;
 }
 #projects .drawer h1 {
-  font-size: 220px;
+  font-size: 100px;
 }
 #contact {
   background: #7e7e7e;
@@ -6104,9 +6104,12 @@ nav.navbar a {
   height: 100%;
 }
 .drawer {
+  width: 100%;
   display: none;
 }
 .drawer h1 {
+  width: 100%;
+  display: block;
   color: #f9ec23;
 }
 #drawerBg {
