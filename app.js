@@ -52,7 +52,7 @@ app.post('/contact', function(req, res){
     smtpTransport.sendMail(
         {
             from: 'Zeppelin Places <noreply@zeppelinplaces.com>',
-            to: 'conar@sellwelldesigns.com',
+            to: 'jamey@zeppelinplaces.com',
             subject: 'Message from ZeppelinPlaces.com',
             text: 'Name: ' + name + '\r\nEmail: ' + email + '\r\nMessage: ' + message,
             html: '<strong>Name:</strong> ' + name + '<br /><strong>Email:</strong> ' + email + '<br /><strong>Message:</strong> ' + message
