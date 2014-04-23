@@ -6031,6 +6031,7 @@ nav.navbar a {
 #quotes {
   background-image: url('../img/freight-bldg.jpg');
   background-size: cover;
+  background-position: bottom right;
   color: #fff;
 }
 #quotes blockquote {
@@ -6122,46 +6123,57 @@ nav.navbar a {
 #drawerBg.taxi1 {
   background-image: url('../img/taxi1.jpg') !important;
   background-size: cover !important;
+  background-position: center center;
 }
 #drawerBg.taxi2 {
   background-image: url('../img/taxi2.jpg') !important;
   background-size: cover !important;
+  background-position: center center;
 }
 #drawerBg.freight {
   background-image: url('../img/freight.JPG') !important;
   background-size: cover !important;
+  background-position: center center;
 }
 #drawerBg.drive1 {
   background-image: url('../img/drive1.jpg') !important;
   background-size: cover !important;
+  background-position: center center;
 }
 #drawerBg.drive2 {
   background-image: url('../img/drive2.jpg') !important;
   background-size: cover !important;
+  background-position: center center;
 }
 #drawerBg.source {
   background-image: url('../img/source.jpg') !important;
   background-size: cover !important;
+  background-position: center center;
 }
 #drawerBg.greenhouse {
   background-image: url('../img/greenhouse.jpg') !important;
   background-size: cover !important;
+  background-position: center center;
 }
 #drawerBg.volkerLofts {
   background-image: url('../img/volker.jpg') !important;
   background-size: cover !important;
+  background-position: center center;
 }
 #drawerBg.grandCherokee {
   background-image: url('../img/path.jpg') !important;
   background-size: cover !important;
+  background-position: center center;
 }
 #drawerBg.citySpirit {
   background-image: url('../img/cityspirit.jpg') !important;
   background-size: cover !important;
+  background-position: center center;
 }
 #drawerBg.freightResidences {
   background-image: url('../img/freight_residences.jpg') !important;
   background-size: cover !important;
+  background-position: center center;
 }
 table.vertical-center,
 table.vertical-center tr,
