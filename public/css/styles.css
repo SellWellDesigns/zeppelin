@@ -6195,6 +6195,12 @@ table.vertical-center tr td * {
   font-weight: 400;
 }
 @media (max-width: 991px) {
+  #intro {
+    height: 50% !important;
+  }
+  #quotes {
+    padding: 75px 0;
+  }
   #drawerBg {
     display: none;
   }
